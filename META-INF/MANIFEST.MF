@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Bazelipse
+Bundle-Name: bazel-eclipse-plugin
 Bundle-SymbolicName: bazelipse;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: com.github.caofangkun.bazelipse.Activator
@@ -12,3 +12,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ui.ide;bundle-version="3.12.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .

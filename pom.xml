@@ -56,9 +56,33 @@
  </dependencies>
  <repositories>
   <repository>
+   <id>tdwmirror</id>
+   <url>http://maven.data.oa.com/nexus/content/groups/public/</url>
+  </repository>
+  <repository>
    <id>eclipse-neon</id>
    <url>http://download.eclipse.org/releases/neon</url>
    <layout>p2</layout>
+  </repository>
+  <repository>
+   <releases>
+    <enabled>true</enabled>
+   </releases>
+   <snapshots>
+    <enabled>false</enabled>
+   </snapshots>
+   <id>central</id>
+   <url>http://repo1.maven.org/maven2/</url>
+  </repository>
+  <repository>
+   <releases>
+    <enabled>true</enabled>
+   </releases>
+   <snapshots>
+    <enabled>true</enabled>
+   </snapshots>
+   <id>clojars</id>
+   <url>https://clojars.org/repo/</url>
   </repository>
  </repositories>
  <distributionManagement>
@@ -101,11 +125,13 @@
      <execution>
       <id>versions</id>
       <phase>validate</phase>
-      <goals>
-       <goal>update-pom</goal>
-      </goals>
      </execution>
     </executions>
+   </plugin>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-eclipse-plugin</artifactId>
+    <version>2.6</version>
    </plugin>
   </plugins>
  </build>
