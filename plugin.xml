@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.jdt.core.classpathContainerInitializer">
+      <classpathContainerInitializer
+            class="com.github.caofangkun.bazelipse.classpath.BazelClasspathContainerInitilalizer"
+            id="com.github.caofangkun.bazelipse.BAZEL_CONTAINER">
+      </classpathContainerInitializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+    <wizard
+          class="com.github.caofangkun.bazelipse.wizard.NewBazelProjectWizard"
+          icon="resources/icon.ico"
+          id="com.github.caofangkun.bazelipse.wizard.NewBazelProjectWizard" 
+          name="Create new Bazel Project"
+          project="true">
+           <description>Create/Import a list of sources from a Bazel workspace into a Java project</description>
+    </wizard>
+   </extension>
+   <extension
+         id="com.github.caofangkun.bazelipse.projectNature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.github.caofangkun.bazelipse.ProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.github.caofangkun.bazelipse.preferences.BazelPreferencePage"
+            id="com.github.caofangkun.bazelipse.preferences"
+            name="Bazel Plugin Preferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.github.caofangkun.bazelipse.preferences.BazelPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         id="com.github.caofangkun.bazelipse.builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            callOnEmptyDelta="false"
+            hasNature="false"
+            isConfigurable="false"
+            supportsConfigurations="false">
+         <run
+               class="com.github.caofangkun.bazelipse.builder.BazelBuilder">
+         </run>
+      </builder>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+   </extension>
+   <extension
+         point="org.eclipse.ui.importWizards">
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+   </extension>
+
+</plugin>
