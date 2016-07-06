@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="com.google.devtools.bazel.e4b.feature"
-      label="Eclipse 4 Bazel"
-      version="0.0.1.qualifier"
-      provider-name="The Bazel Authors">
+      id="com.github.caofangkun.bazelipse.feature"
+      label="Bazelipse_updatesite"
+      version="1.0.0"
+      provider-name="caofangkun@gmail.com">
 
-   <description url="http://bazel.io">
+   <description url="http://github.com/caofangkun/bazelipse">
       Integrate Eclipse with the Bazel build system.
    </description>
 
    <copyright>
-      Copyright 2016 The Bazel Authors
+      Copyright 2016 
    </copyright>
 
    <license url="http://www.apache.org/licenses/LICENSE-2.0">
@@ -218,13 +218,12 @@
    </license>
 
    <url>
-      <discovery label="Bazel" url="http://bazel.io"/>
+      <discovery label="bazelipse" url="http://github.com/caofangkun/"/>
    </url>
 
    <plugin
-         id="com.google.devtools.bazel.e4b"
+         id="bazelipse"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
-
 </feature>
