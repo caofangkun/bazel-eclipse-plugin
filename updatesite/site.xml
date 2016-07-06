@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Eclipse 4 Bazel" url="https://github.com/caofangkun/bazelipse">
+      Eclipse plugin for Bazel
+   </description>
+   <feature url="features/com.github.caofangkun.bazelipse.feature_0.0.1.jar" id="com.github.caofangkun.bazelipse.feature" version="0.0.1"/>
+</site>
