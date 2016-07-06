@@ -31,9 +31,9 @@
   </developer>
  </developers>
  <scm>
-  <connection>scm:git:https://github.com/caofangkun/storm-eclipse-plugin</connection>
-  <developerConnection>scm:git:https://github.com/caofangkun/storm-eclipse-plugin</developerConnection>
-  <url>https://github.com/caofangkun/storm-eclipse-plugin</url>
+  <connection>scm:git:https://github.com/caofangkun/bazelipse</connection>
+  <developerConnection>scm:git:https://github.com/caofangkun/bazelipse</developerConnection>
+  <url>https://github.com/caofangkun/bazelipse</url>
   <tag>HEAD</tag>
  </scm>
  <properties>
@@ -56,8 +56,8 @@
  </dependencies>
  <repositories>
   <repository>
-   <id>eclipse-luna</id>
-   <url>http://download.eclipse.org/releases/luna</url>
+   <id>eclipse-neon</id>
+   <url>http://download.eclipse.org/releases/neon</url>
    <layout>p2</layout>
   </repository>
  </repositories>
